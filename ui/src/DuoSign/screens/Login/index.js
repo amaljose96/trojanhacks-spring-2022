@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../pearls/Button";
 import Checkbox from "../../pearls/Checkbox";
 import TextInput from "../../pearls/TextInput";
 import { LoginContainer, LoginTitle, InputContainer,CheckboxContainer } from "./styles";
 
 function Login() {
+  let navigate = useNavigate();
   let [username, setUsername] = React.useState("");
   let [useASL, setUseASL] = React.useState(false);
   return <LoginContainer>
@@ -18,7 +20,7 @@ function Login() {
     <Checkbox label="Use ASL?" value={useASL} setValue={setUseASL}/>
     </CheckboxContainer>
     <Button text="Login" onClick={() => {
-      // alert("finally")
+      navigate("/app")
     }} />
   </LoginContainer>;
 }

@@ -27,7 +27,7 @@ export const Tick=styled.div`
     height:20px;
     width:20px;
     ${OutsetComponentStyles}
-    ${props=>props.value && `background-color:${colors.secondary};border-color:${colors.secondary}`};
+    ${props=>props.value && `background-color:${colors.primary};border-color:${colors.primary}`};
     border-radius:100px;
 `;
 export const CheckboxLabel = styled.div`

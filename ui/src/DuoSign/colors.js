@@ -3,7 +3,7 @@ let colors = {
     "background": "#F3F3F3",
     "primary": "#990000",
     "secondary": "#ffcc00",
-    "shadeContrast":0.7
+    "shadeContrast":0.5
 }
 
 export function getLighterShade(baseColor) {
