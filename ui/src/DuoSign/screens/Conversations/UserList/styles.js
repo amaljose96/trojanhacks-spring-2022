@@ -16,6 +16,8 @@ export const User = styled.div`
     padding:10px;
     margin:10px;
     border-radius:10px;
+    display:flex;
+    align-items:center;
     ${props => props.active && `
         background-color:${colors.primary};
         color:${colors.highlightText};
@@ -27,4 +29,12 @@ export const User = styled.div`
         border-radius:10px;
         cursor:pointer;
     }
+`;
+
+export const OnlineMarker = styled.div`
+    margin-right:10px;
+    background-color:${props=>props.online ? "#0a0":colors.darkShade};
+    height:10px;
+    width:10px;
+    border-radius:10px;
 `;

@@ -9,7 +9,7 @@ export const ChatContainer = styled.div`
     margin:10px 0px;
 `;
 export const ChatTime = styled.div`
-    font-size:12px;
+    font-size:10px;
 `;
 export const ChatBubble = styled.div`
     margin-${props=>props.byMe ? "right":"left"}:10px;

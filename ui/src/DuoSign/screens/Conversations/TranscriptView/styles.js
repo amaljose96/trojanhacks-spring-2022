@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import colors from "../../../colors";
 import { OutsetComponentStyles } from "../../../styles";
 
 export const TranscriptViewContainer = styled.div`
@@ -36,4 +37,12 @@ export const PanelSegment = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+`;
+
+export const OnlineMarker = styled.div`
+    height:20px;
+    width:20px;
+    border-radius:20px;
+    background-color:${props=>props.online?"#0a0":colors.darkShade};
+    margin-left:15px;
 `;

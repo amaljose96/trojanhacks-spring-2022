@@ -11,7 +11,7 @@ function Conversations() {
   return <ConversationsContainer>
     <Sidebar config={sidebarConfig} current={"list"}/>
     <AppContainer>
-      <PageTitle>Online Users</PageTitle>
+      <PageTitle>Contacts</PageTitle>
      <UserList selectedUser={selectedUser} setSelectedUser={setSelectedUser}/>
     <TranscriptView selectedUser={selectedUser}/>
     </AppContainer>

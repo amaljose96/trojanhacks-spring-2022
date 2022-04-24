@@ -1,7 +1,7 @@
 import React from "react";
 import Landing from "./screens/Landing";
 import { DuoSignContainer } from "./styles";
-import {Switch, Route,Routes } from "react-router-dom"
+import { Route,Routes } from "react-router-dom"
 import Login from "./screens/Login";
 import Conversations from "./screens/Conversations";
 import Settings from "./screens/Settings";

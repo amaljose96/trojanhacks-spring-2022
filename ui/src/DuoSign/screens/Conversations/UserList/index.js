@@ -1,14 +1,23 @@
 import React from "react";
-import { UserListContainer,User } from "./styles";
+import { getUsers } from "./service";
+import { UserListContainer, User,OnlineMarker } from "./styles";
 
 function UserList({ selectedUser, setSelectedUser }) {
-  let users = ["amaljose96", "srinicoder", "csenthil", "vijappu"]
+  const [users,setUsers] = React.useState([]);
+  React.useEffect(()=>{
+    getUsers().then(data=>{
+      setUsers(data)
+    })
+  },[])
   return <UserListContainer>
     {
       users.map((user) => {
         return <User onClick={() => {
           setSelectedUser(user)
-        }} active={selectedUser == user}>{user}</User>
+        }} active={selectedUser.username == user.username}>
+          <OnlineMarker online={user.online}/>
+          {user.username}
+        </User>
       })
     }
   </UserListContainer>;

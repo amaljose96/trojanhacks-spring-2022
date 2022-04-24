@@ -3,7 +3,7 @@ import { ChatContainer,ChatTime,ChatBubble } from "./styles";
 
 function getChatTimeString(time){
   let date = new Date(time);
-  return `${date.toLocaleString()} `
+  return `${date.toLocaleTimeString()} `
 }
 function Chat({byMe,text,time}) {
   return <ChatContainer byMe={byMe}>
