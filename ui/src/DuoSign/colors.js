@@ -1,8 +1,9 @@
 
 let colors = {
-    "background": "#F0F0F3",
-    "primary": "#728AB7",
-    "secondary": "#FB7575"
+    "background": "#F3F3F3",
+    "primary": "#990000",
+    "secondary": "#ffcc00",
+    "shadeContrast":0.7
 }
 
 export function getLighterShade(baseColor) {
@@ -109,7 +110,7 @@ function rgbToHex(r, g, b) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-colors.darkerShade=getDarkerShade(colors.background)
-colors.lighterShade=getLighterShade(colors.background)
+colors.darkShade=getDarkerShade(colors.background)
+colors.lightShade=getLighterShade(colors.background)
 
 export default colors;
