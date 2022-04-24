@@ -4,6 +4,7 @@ import colors from "./colors";
 
 export const DuoSignContainer = styled.div`
     background-color:${colors.background};
+    color:${colors.text};
     position:absolute;
     top:0;
     left:0;
@@ -44,7 +45,7 @@ export const RidgedActiveStyles = `
 `;
 
 export const InsetComponentStyles = `
-  box-shadow: inset -1px -1px 1px ${colors.lightShade}b3, inset 1px 1px 2px ${colors.darkShade}30;
+  box-shadow: inset -2px -2px 2px ${colors.lightShade}b3, inset 2px 2px 4px ${colors.darkShade}30;
   transition:all 0.3s;
   background-color:${colors.background}
 `;
@@ -84,3 +85,21 @@ export const PageTitle=styled.div`
   color:${colors.primary};
   font-weight:bold;
 `
+
+export const AppContainer=styled.div`
+  position:fixed;
+  top:5px;
+  left:55px;
+  height:calc(100vh - 10px);
+  width:calc(100vw - 60px);
+  ${InsetComponentStyles};
+  border-radius:20px;
+  padding:30px;
+  box-sizing:border-box;
+`;
+
+export const Spacer = styled.div`
+  box-sizing:border-box;
+  height:50px;
+  width:50px;
+`;

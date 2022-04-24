@@ -3,13 +3,12 @@ import colors from "../../colors";
 import { RidgedActiveStyles, RidgedComponentStyles, RidgedHoverStyles } from "../../styles";
 
 export const TextInputContainer = styled.div`
-    margin:5px;
 `;
 
 
 export const TextInputLabel = styled.div`
     margin-bottom:10px;
-    font-size:12px;
+    font-size:14px;
     margin-left:10px;
     font-weight:bold;
     color:${colors.primary};

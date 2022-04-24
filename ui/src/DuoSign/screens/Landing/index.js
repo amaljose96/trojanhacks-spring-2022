@@ -37,7 +37,7 @@ function Landing(props) {
         </defs>
       </svg>
     </AppLogoContainer>
-    <Title>DuoASL</Title>
+    <Title>DuoSign</Title>
   </LandingContainer>;
 }
 export default Landing;
