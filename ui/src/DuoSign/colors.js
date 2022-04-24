@@ -1,9 +1,9 @@
 
 let colors = {
-    "background": "#F3F3F3",
-    "primary": "#990000",
-    "secondary": "#ffcc00",
-    "shadeContrast":0.5
+    "background": "#dddddd",
+    "primary": "#d62828",
+    "secondary": "#f77f00",
+    "shadeContrast":0.4
 }
 
 export function getLighterShade(baseColor) {
@@ -112,5 +112,11 @@ function rgbToHex(r, g, b) {
 
 colors.darkShade=getDarkerShade(colors.background)
 colors.lightShade=getLighterShade(colors.background)
+let overallBrightness = rgbToHsl(...hexToRgb(colors.background))[2];
+colors.text = overallBrightness>0.5 ? "#222222":"#FFFFFF";
+let primaryBrightness = rgbToHsl(...hexToRgb(colors.primary))[2];
+colors.highlightText = primaryBrightness>0.5 ? "#222222":"#FFFFFF"
+   
+
 
 export default colors;

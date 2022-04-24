@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../pearls/Button";
 import Checkbox from "../../pearls/Checkbox";
 import TextInput from "../../pearls/TextInput";
-import { LoginContainer, LoginTitle, InputContainer,CheckboxContainer } from "./styles";
+import { Spacer } from "../../styles";
+import { LoginContainer, LoginTitle, InputContainer, CheckboxContainer } from "./styles";
 
 function Login() {
   let navigate = useNavigate();
@@ -17,8 +18,9 @@ function Login() {
       <TextInput label="User Name" value={username} setValue={setUsername} />
     </InputContainer>
     <CheckboxContainer>
-    <Checkbox label="Use ASL?" value={useASL} setValue={setUseASL}/>
+      <Checkbox label="Use ASL?" value={useASL} setValue={setUseASL} />
     </CheckboxContainer>
+    <Spacer/>
     <Button text="Login" onClick={() => {
       navigate("/app")
     }} />
